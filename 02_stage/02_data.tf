@@ -22,6 +22,7 @@ module "stage" {
     prot_tcp = "tcp"
     prot_ssh = "ssh"
     instance = "t2.micro"
-    
-    
+    dbname = "mydb"
+    instancedb = "db.t2.micro"
+    lbtype = "application"
 }
