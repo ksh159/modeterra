@@ -2,7 +2,7 @@
 resource "aws_lb" "ksh_lb" {
   name               = "${var.name}-alb"
   internal           = false
-  load_balancer_type = "application"
+  load_balancer_type = var.lbtype
   security_groups    = [aws_security_group.ksh_websg.id]
   subnets            = [aws_subnet.ksh_pub[0].id,aws_subnet.ksh_pub[1].id]
  /*

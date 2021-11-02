@@ -107,3 +107,14 @@ variable "instance" {
 #  default = "t2.micro"
 }
 
+variable "instancedb" {
+  type = string
+}
+variable "dbname" {
+  type = string
+}
+
+variable "lbtype" {
+  type = string
+}
+

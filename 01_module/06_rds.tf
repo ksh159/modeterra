@@ -3,9 +3,9 @@ resource "aws_db_instance" "ksh_mydb" {
   storage_type            = "gp2"
   engine                  = "mysql"
   engine_version          = "8.0"
-  instance_class          = "db.t2.micro"
-  name                    = "mydb"
-  identifier              = "mydb"
+  instance_class          = var.instancedb
+  name                    = var.dbname
+  identifier              = var.dbname
   username                = "admin"
   password                = "It12345!"
   parameter_group_name    = "default.mysql8.0"
